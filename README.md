@@ -1,4 +1,4 @@
-# lsstsqre/minimal
+# lsstsqre/farthing
 
 This is a minimal Docker container.  It does nothing, and exits with a
 zero return code.
@@ -25,14 +25,21 @@ modified it so that it exited with a return code of zero.
 Start with the hideously bloated alpine:latest.  Add the nasm apk
 (another 8 megabytes!).
 
-Assemble the [minimal assembly source](./minimal.asm), which yields a
-much-more-svelte 112 bytes.
+Assemble the [source](./farthing.asm), which yields a much-more-svelte
+112 bytes.
 
 Chmod that so it's executable.
 
 Then copy that into a scratch container.  Make it run as a non-root
 user, obviously, and add an entrypoint.
 
+### Farthing
+
+It's a quarter of a penny.  It's the smallest denomination of
+(pre-decimalisation) UK currency.
+
+Also, "farthing."  Heh, heh.
+
 ## Conclusion
 
-`lsstsqre/minimal                                                               1.0.0                            4f8f0be82779   33 minutes ago   112B`
+`lsstsqre/farthing                                                              1.0.1                            4f8f0be82779   3 hours ago     112B`
